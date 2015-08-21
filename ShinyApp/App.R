@@ -8,6 +8,7 @@
 
 suppressPackageStartupMessages(library(shiny))
 suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(stringr))
 suppressPackageStartupMessages(library(htmlwidgets))
 suppressPackageStartupMessages(library(taucharts))
 
@@ -20,7 +21,7 @@ ui <- fluidPage(
       hr(),
 # Use instructions
       h5("Instructions:"),
-      helpText("This Shiny app allows you to explore babynames from the Hadley Wickham´s dataset (years 1820 to 2013). Two options are provided; a chart showing the top baby name for each year or, a chart displaying the trend for a specific name."),
+      helpText("This Shiny app allows you to explore babynames from the Hadley Wickham´s dataset (years 1880 to 2013). Two options are provided; a chart showing the top baby name for each year or, a chart displaying the trend for a specific name."),
       fluidRow(
             column(width = 6, helpText("1.- Select the chart to display")),
             column(width = 6, 
@@ -86,7 +87,7 @@ server <- function(input, output){
 # Filter for option 2 chart. Specific baby name.
 # Reactive to only change chart if button is clicked
       datatouse <- eventReactive(input$makechange, {
-                  babynames %>% filter(name %in% input$choosenname)
+                  babynames %>% filter(name %in% str_to_title(input$choosenname))
                   })
 # Title tor option 2 chart. 
 # Reactive to only display the title with the chart (tau_title not working for shiny in this version)            
