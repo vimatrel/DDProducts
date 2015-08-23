@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>The Baby Names</title>
+  <meta name="description" content="">
+  <meta name="author" content="Vimatrel">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="libraries/frameworks/revealjs/css/theme/default.css" id="theme">
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/zenburn.css" id="theme">
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->  <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class='' data-state='' id='slide-1'>
+  <h1>The Baby Names</h1>
+  <h2>Shiny App</h2>
+
+<p>JH DS - Developing Data Products Project  </p>
+
+</section>
+<section class='' data-state='' id='slide-2'>
+  <h2>Introducing the Babynames Shiny App</h2>
+  <p>A simple interactive exploration app<br>
+US baby name data years 1880 to 2013 </p>
+
+</section>
+<section class='' data-state='' id='slide-3'>
+  <h3>Explore the most popular baby name of each year</h3>
+  <ul>
+<li>Checkbox to Filter by gender<br>
+<img src="intro.png" alt="introducing"><br></li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-4'>
+  <h3>Search the trend of a particular name</h3>
+  <ul>
+<li>Simply type the desired name in the input box<br>
+<img src="textinput.png" alt="introducing"><br></li>
+</ul>
+
+</section>
+<section class='' data-state='' id='slide-5'>
+  <h3>Fully interactive charts with hover action</h3>
+  <ul>
+<li>Hover chart for tooltips<br></li>
+<li>Hover legend to highlight selection or filter by clicking on it<br></li>
+</ul>
+
+<pre><code>## Error in eval(expr, envir, enclos): could not find function &quot;%&gt;%&quot;
+</code></pre>
+
+<pre><code>## Error in showchart1$width &lt;- &quot;772px&quot;: object &#39;showchart1&#39; not found
+</code></pre>
+
+<pre><code>## Error in showchart1$height &lt;- &quot;476px&quot;: object &#39;showchart1&#39; not found
+</code></pre>
+
+<pre><code>## Error in showchart1$padding &lt;- &quot;0&quot;: object &#39;showchart1&#39; not found
+</code></pre>
+
+<pre><code>## Error in eval(expr, envir, enclos): could not find function &quot;saveWidget&quot;
+</code></pre>
+
+<iframe src="chart1.html" width="1500px" height="510px" frameborder="0"
+    allowtransparency="true"> </iframe>
+
+<p><a href="https://vimatrel.shinyapps.io/babynamesApp">Click to visit Shini.io and play with the app</a>  </p>
+
+</section>
+    </div>
+  </div>
+</body>
+  <script src="libraries/frameworks/revealjs/lib/js/head.min.js"></script>
+  <script src="libraries/frameworks/revealjs/js/reveal.min.js"></script>
+  <script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    theme: Reveal.getQueryHash().theme || 'default', 
+    transition: Reveal.getQueryHash().transition || 'default', 
+    dependencies: [
+    // Cross-browser shim that fully implements classList -
+    // https://github.com/eligrey/classList.js/
+      { src: 'libraries/frameworks/revealjs/lib/js/classList.js', condition: function() { return !document.body.classList;}},
+      // Zoom in and out with Alt+click
+      { src: 'libraries/frameworks/revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Speaker notes
+      { src: 'libraries/frameworks/revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+      // Remote control your reveal.js presentation using a touch device
+      //{ src: 'libraries/frameworks/revealjs/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+      ]
+  });
+  </script>  <!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+ 
+
+</html>
