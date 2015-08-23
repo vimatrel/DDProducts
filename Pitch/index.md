@@ -42,27 +42,6 @@ US baby name data years 1880 to 2013
 
 
 
-
-```
-## Error in eval(expr, envir, enclos): could not find function "%>%"
-```
-
-```
-## Error in showchart1$width <- "772px": object 'showchart1' not found
-```
-
-```
-## Error in showchart1$height <- "476px": object 'showchart1' not found
-```
-
-```
-## Error in showchart1$padding <- "0": object 'showchart1' not found
-```
-
-```
-## Error in eval(expr, envir, enclos): could not find function "saveWidget"
-```
-
 <iframe src="chart1.html" width="1500px" height="510px" frameborder="0"
     allowtransparency="true"> </iframe>
 

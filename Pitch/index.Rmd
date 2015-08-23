@@ -67,7 +67,7 @@ saveWidget(showchart1, 'chart1.html')
 cat('<iframe src="chart1.html" width="1500px" height="510px" frameborder="0"
     allowtransparency="true"> </iframe>')
 
-
+#End
 
 ```
 
